@@ -6,7 +6,7 @@ contextBridge.exposeInMainWorld('electron', {
   notificationApi: {
     sendNotification(message) {
       ipcRenderer.send(IpcEvents.INTERACTION_NOTIFICATION, message);
-    }
+    } 
   },
   batteryApi: {
 
